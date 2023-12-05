@@ -26,13 +26,17 @@ int main()
         {
             if (at[j] > at[j + 1])
             {
+                // swap p
                 temp = p[j + 1];
                 p[j + 1] = p[j];
                 p[j] = temp;
+
+                // swap at
                 temp = at[j + 1];
                 at[j + 1] = at[j];
-
                 at[j] = temp;
+
+                // swap bt
                 temp = bt[j + 1];
                 bt[j + 1] = bt[j];
                 bt[j] = temp;
